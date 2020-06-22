@@ -1,0 +1,275 @@
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+  }
+
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: azure;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  a img {
+    display: block;
+  }
+  
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  body {
+    margin: 0 auto;
+    color: #00000083;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+header {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: 100% auto;
+    background-position: center;
+    margin: 0 auto;
+  }
+  header h1#logo-main a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 200px;
+    height: auto;
+    padding-top: 140px;
+    padding-left: 22%;
+  }
+
+  header nav#menu-arriba ul li ul.sub-menu {
+    position: absolute;
+    z-index: 1;
+    background: #0f69b4;
+    width: 100%;
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  header nav#menu-arriba ul li ul.sub-menu li a {
+    padding: 10px 5px;
+    color: rgb(40, 28, 148);
+    border: none;
+    font-size: 100%;
+    height: auto;
+  }
+
+  header nav#menu-arriba ul li:hover ul.sub-menu {
+    display: table;
+  }
+  
+  header nav#menu-arriba {
+    color: #0400ff;
+    font-family: 'Montserrat Alternates';
+    width: 100%;
+    display: table;
+    position: absolute;
+    font-size: large;
+  }
+
+  header nav#menu-arriba ul {
+    background: rgb(53, 101, 133);
+    display: table-row;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav#menu-arriba ul li {
+    margin: 0;
+    display: table-cell;
+    text-align: center;
+    position: relative;
+  }
+
+  header nav#menu-arriba ul li a {
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    display: block;
+    border-right: 1px solid #3f3e9c;
+    border-bottom: 2px solid #1f58ad;
+  }
+
+  header nav#menu-arriba ul li a:hover {
+    color: #2cb4cc;
+    border-bottom: 2px dotted #5cbfd8;
+    text-decoration: none;
+    background-color: rgb(105, 105, 145);
+  }
+  
+  header nav#menu-arriba ul li:last-child a {
+    border-right: none;
+  }
+
+  header nav#menu-arriba ul li ul.sub-menu {
+    position: absolute;
+    z-index: 1;
+    background: #9dd4d0;
+    width: 100%;
+  }
+  header nav#menu-arriba ul li ul.sub-menu li {
+    float: none;
+    text-align: center;
+    border-bottom: 1px dashed darkblue;
+    display: block;
+  }
+  
+  .idean1 p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 550;
+    color: darkblue;
+    font-size: 95%;
+    text-align: center;
+  }
+
+  .datos h2,
+  .idean1 h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 200%;
+    margin-top: 3%;
+    text-decoration: underline;
+  }
+  
+  .datos h3{
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    font-size: 100%;
+    font-weight: lighter;
+  }
+
+  .datos li{
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bolder;
+  }
+
+  
+  .datostabla{
+    border: 5px dotted rgba(149, 150, 212, 0.527);
+    background-color: rgba(147, 139, 180, 0.5);  
+    padding: 2% 4%;  
+    width: 75%;
+    border-radius: 30px;
+    margin: 8%;
+    float:center;
+  }
+  
+  img {
+    border: 0;
+  }
+
+  .datosimg img{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border: 2px dashed rgba(255, 255, 255, 0.527);
+    background-color: rgba(176, 190, 214, 0.582);  
+    padding: 1%;  
+    border-radius: 20px;
+    left: 8%;
+  }
+
+  .datosimg img:hover {
+    width: 30%;
+    height: auto;
+  }
+
+  @media (min-width: 300px) and (max-width: 599px) {
+
+    body {
+      font-size: small;
+      font-weight: lighter;
+    }
+    
+    #menu-arriba{
+      display: flex;
+    }
+
+    .datosimg img{
+      position: relative;
+      width: 80%;
+      height: auto;
+      border: 2px dashed rgba(255, 255, 255, 0.527);
+      background-color: rgba(176, 190, 214, 0.582);  
+      padding: 1%;  
+      border-radius: 20px;
+      left: 7%;
+    }
+  
+    .datosimg img:hover {
+      width: 30%;
+      height: auto;
+      padding-right: 1em;
+    }
+
+    header {
+      width: 100%;
+      height: 300px;
+      position: relative;
+      background-size: 100% auto;
+      background-position: fixed;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+    }
+
+  header nav#menu-arriba ul li ul.sub-menu li a {
+    padding: 10%;
+    color: rgb(40, 28, 148);
+    border: none;
+    font-size: 60%;
+    height: auto;
+  }
+
+  header nav#menu-arriba ul li:hover ul.sub-menu {
+    display: table;
+    height: 0;
+  }
+  
+  header nav#menu-arriba {
+    color: #0400ff;
+    font-family: 'Montserrat Alternates';
+    width: 100%;
+    display: table;
+    position: absolute;
+    font-size: small;
+  }
+
+  
+  header nav#menu-arriba ul li:first-child{
+    display: none;
+  }
+
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: azure;
+  }
+
+  }
